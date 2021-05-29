@@ -1,7 +1,12 @@
-import pandas as pd
+# coding=utf-8
+"""
+@time: 2021/4/22 10:07 PM
+@author: colaplusice
+@contact: fjl2401@163.com vx:18392358995
+"""
+import csv
 
-df_marks = pd.DataFrame()
-new_row = pd.Series(data={'name': 'Geo', 'physics': 87, 'chemistry': 92}, name='x')
-df_marks = df_marks.append(new_row, ignore_index=False)
+with open('all_links.csv', 'r')as opener:
+    read_list = opener.readlines()
 
-print(df_marks)
+
